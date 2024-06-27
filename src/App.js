@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import BlogPage from './components/BlogPage';
+import CreateEditBlog from './components/CreateEditBlog';
+import CategoryPage from './components/CategoryPage';
+import { useSelector } from 'react-redux';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-function App() {
+const App = () => {
+  const theme = useSelector(state => state.theme);
+  const themeMode = createTheme({
+    palette: {
+      mode: theme,
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={themeMode}>
+      <CssBaseline />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blog/:id" element={<BlogPage />} />
+          <Route path="/create" element={<CreateEditBlog />} />
+          <Route path="/edit/:id" element={<CreateEditBlog />} />
+          <Route path="/category/:category" element={<CategoryPage />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
-}
+  
+};
 
 export default App;
