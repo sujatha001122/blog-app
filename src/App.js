@@ -19,7 +19,7 @@ const App = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <CssBaseline />
-      <Router>
+      <Router basename="/blog_app">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog/:id" element={<BlogPage />} />
@@ -30,7 +30,6 @@ const App = () => {
       </Router>
     </ThemeProvider>
   );
-  
 };
 
 export default App;
