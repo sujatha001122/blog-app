@@ -98,5 +98,3 @@ npm install react-quill.
 
 
 
-
-
