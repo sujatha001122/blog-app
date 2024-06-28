@@ -21,7 +21,7 @@ The landing page displays a list of all blog posts. Here's how to interact with 
 - Make the necessary changes to the blog post.
 - Click the "Update" button to save your changes.
 
-### 3.Deleting a Blog Post
+### 3. Deleting a Blog Post
 
 - Click on the blog post you want to delete.
 - You will be taken to the blog's overview page.
