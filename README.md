@@ -1,4 +1,4 @@
-### Blog App
+# Blog App
 
 A simple blogging platform built with React, Redux, and Material-UI. Users can browse, create, edit, and delete blog posts. The application supports category filtering and light/dark theme toggling.
 
@@ -14,29 +14,29 @@ A simple blogging platform built with React, Redux, and Material-UI. Users can b
 
 ## Components folder
 
-# HomePage
+### HomePage
 Displays a list of blog posts with the ability to filter by category and search by title. Each blog post has an edit button to navigate to the edit page.
 
-# NavBar
+### NavBar
 Provides navigation links and a search bar. Includes theme toggling functionality.
 
-# BlogPage
+### BlogPage
 Displays the full content of a single blog post.
 
-# CreateEditBlog
+### CreateEditBlog
 Form for creating a new blog post or editing an existing one.
 
-# CategoryPage
+### CategoryPage
 Displays blog posts filtered by a specific category.
 
 ## Redux folder 
-# blogSlice
+### blogSlice
 Manages the state of blog posts, including actions for adding, editing, and deleting posts.
 
-# themeSlice
+### themeSlice
 Manages the state of the application theme (light or dark).
 
-# Dependent install or necessary packages:
+## Dependent install or necessary packages:
 
 ``bash
 npm install @mui/material @emotion/react @emotion/styled redux react-redux redux-thunk react-router-dom@6 @mui/icons-material
