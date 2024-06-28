@@ -26,6 +26,7 @@ The landing page displays a list of all blog posts. Here's how to interact with 
 - Click on the blog post you want to delete.
 - You will be taken to the blog's overview page.
 - Click the "Delete Blog" button to remove the blog post.
+
 These instructions will help you effectively navigate and manage your blog posts on the platform.
 
 ## Features
