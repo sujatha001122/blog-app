@@ -2,6 +2,9 @@
 
 A simple blogging platform built with React, Redux, and Material-UI. Users can browse, create, edit, and delete blog posts. The application supports category filtering and light/dark theme toggling.
 
+#  Deployed URL
+URL: https://blog-app-flame-omega.vercel.app/
+
 ## Usage Guidelines
 ### Landing Page
 The landing page displays a list of all blog posts. Here's how to interact with the application:
@@ -72,7 +75,27 @@ npm install react-router-dom@6 @mui/icons-material @mui/icons-material @mui/lab
 npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic(opt)
 npm install @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 npm install @reduxjs/toolkit react-redux
-npm install react-quill
+npm install react-quill.
+```
+
+## Technologies Used
+
+- React.js
+- Material-UI (MUI)
+- Redux
+- React Router
+- CKEditor 5 (Rich Text Editor)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sujatha001122/blog-app.git
+   cd blog-app
+   npm install
+   npm start
+
 
 
 
