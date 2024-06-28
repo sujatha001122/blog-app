@@ -48,7 +48,7 @@ const BlogPage = () => {
                 <Typography variant="body2">{blog.reactions.dislikes}</Typography>
               </Box>
               <IconButton onClick={handleDelete} color="error">
-                Delete
+                Delete Blog
               </IconButton>
             </Box>
           </CardContent>
@@ -80,5 +80,5 @@ const BlogPage = () => {
   );
 };
 
-
 export default BlogPage;
+ 

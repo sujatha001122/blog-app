@@ -14,7 +14,6 @@ const ThemeSwitcher = () => {
   return (
     <Button onClick={handleThemeToggle}>
       Switch to {theme === 'light' ? 'dark' : 'light'} mode
-      
     </Button>
   );
 };

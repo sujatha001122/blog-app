@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import posts from '../assets/posts.json';
+import posts from '../assets/posts.json'; 
 
 const blogSlice = createSlice({
   name: 'blogs',
