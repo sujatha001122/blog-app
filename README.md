@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+### Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple blogging platform built with React, Redux, and Material-UI. Users can browse, create, edit, and delete blog posts. The application supports category filtering and light/dark theme toggling.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse all blog posts
+- Filter blog posts by category
+- Search for blog posts by title
+- Create new blog posts
+- Edit existing blog posts
+- Delete blog posts
+- Toggle between light and dark themes
 
-### `npm start`
+## Components folder
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# HomePage
+Displays a list of blog posts with the ability to filter by category and search by title. Each blog post has an edit button to navigate to the edit page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# NavBar
+Provides navigation links and a search bar. Includes theme toggling functionality.
 
-### `npm test`
+# BlogPage
+Displays the full content of a single blog post.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# CreateEditBlog
+Form for creating a new blog post or editing an existing one.
 
-### `npm run build`
+# CategoryPage
+Displays blog posts filtered by a specific category.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Redux folder 
+# blogSlice
+Manages the state of blog posts, including actions for adding, editing, and deleting posts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# themeSlice
+Manages the state of the application theme (light or dark).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Dependent install or necessary packages:
 
-### `npm run eject`
+``bash
+npm install @mui/material @emotion/react @emotion/styled redux react-redux redux-thunk react-router-dom@6 @mui/icons-material
+npm install @mui/material @emotion/react @emotion/styled redux react-redux @reduxjs/toolkit @mui/icons-material
+npm install react-router-dom@6 @mui/icons-material @mui/icons-material @mui/lab
+npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic(opt)
+npm install @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+npm install @reduxjs/toolkit react-redux
+npm install react-quill
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
