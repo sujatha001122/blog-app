@@ -38,7 +38,7 @@ Manages the state of the application theme (light or dark).
 
 ## Dependent install or necessary packages:
 
-``bash
+```bash
 npm install @mui/material @emotion/react @emotion/styled redux react-redux redux-thunk react-router-dom@6 @mui/icons-material
 npm install @mui/material @emotion/react @emotion/styled redux react-redux @reduxjs/toolkit @mui/icons-material
 npm install react-router-dom@6 @mui/icons-material @mui/icons-material @mui/lab
@@ -46,5 +46,7 @@ npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic(o
 npm install @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 npm install @reduxjs/toolkit react-redux
 npm install react-quill
+
+
 
 
